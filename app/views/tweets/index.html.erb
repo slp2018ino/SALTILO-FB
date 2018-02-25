@@ -1,18 +1,46 @@
 <div>
-<% @tweets.each do |tweet| %>
-<p><%= tweet.team_name %></p>
-<% end %>
+	<h2 style="margin: 20px 0;">
+		チーム
+	</h2>
+	<% @tweets.each do |tweet| %>
+	<div style="border-bottom: 1px solid gray;padding: 20px 0;">
+		<p style="line-height: 1.7;"><%= tweet.team_name %></p>
+		<p style="line-height: 1.7;"><%= tweet.univ_name %></p>
+		<p style="line-height: 1.7;"><%= tweet.eteam_text %></p>
+		<p style="line-height: 1.7;"><%= tweet.team_logo %></p>
+		<p style="line-height: 1.7;"><%= tweet.team_garrely %></p>
+	</div>
+	<% end %>
 </div>
 
 
 <div>
-<% @gametweets.each do |gametweet| %>
-<p><%= gametweet.game_name %></p>
-<% end %>
+	<h2 style="margin: 20px 0;">
+		ゲーム
+	</h2>
+	<% @gametweets.each do |gametweet| %>
+	<div style="border-bottom: 1px solid gray;padding: 20px 0;">
+		<p style="line-height: 1.7;"><%= gametweet.game_name %></p>
+		<p style="line-height: 1.7;"><%= gametweet.game_place %></p>
+		<p style="line-height: 1.7;"><%= gametweet.game_team1 %></p>
+		<p style="line-height: 1.7;"><%= gametweet.game_team2 %></p>
+		<p style="line-height: 1.7;"><%= gametweet.game_team1_score %></p>
+		<p style="line-height: 1.7;"><%= gametweet.game_team2_score %></p>
+		<% ab = gametweet.game_team1_score.to_i %>
+		<% cd = gametweet.game_team2_score.to_i %>
+		<p style="line-height: 1.7;">得点差：<%= ab - cd %></p>
+	</div>
+	<% end %>
 </div>
 
 <div>
-<% @infotweets.each do |infotweet| %>
-<p><%= infotweet.info_title %></p>
-<% end %>
+	<h2 style="margin: 20px 0;">
+		ニュース
+	</h2>
+	<% @infotweets.each do |infotweet| %>
+	<div style="border-bottom: 1px solid gray;padding: 20px 0;">
+		<p style="line-height: 1.7;"><%= infotweet.info_title %></p>
+		<p style="line-height: 1.7;"><%= infotweet.info_text %></p>
+	</div>
+	<% end %>
 </div>

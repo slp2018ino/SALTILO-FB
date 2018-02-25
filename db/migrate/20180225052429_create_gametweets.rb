@@ -6,8 +6,8 @@ class CreateGametweets < ActiveRecord::Migration
 			t.string :game_place
 			t.string :game_team1
 			t.string :game_team2
-			t.string :game_team1_score
-			t.string :game_team2_score
+			t.integer :game_team1_score
+			t.integer :game_team2_score
 
 			t.timestamps
 		end
