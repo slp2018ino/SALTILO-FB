@@ -1,0 +1,14 @@
+<div class="contents row">
+	<%= form_tag('/gametweets', method: :post) do %>
+	<h3>
+		投稿する
+	</h3>
+	<p><input placeholder="試合名" type="text" name="game_name"></p>
+	<p><input placeholder="会場" type="text" name="game_place"></p>
+	<p><input placeholder="チーム名(1)" type="text" name="game_team1"></p>
+	<p><input placeholder="チーム名(2)" type="text" name="game_team2"></p>
+	<p><input placeholder="チーム(1)スコア" type="text" name="game_team1_score"></p>
+	<p><input placeholder="チーム(2)スコア" type="text" name="game_team2_score"></p>
+	<p><input type="submit" value="SENT"></p>
+	<% end %>
+</div>

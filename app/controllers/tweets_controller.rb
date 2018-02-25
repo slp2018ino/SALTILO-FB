@@ -1,8 +1,10 @@
 class TweetsController < ApplicationController
 	def index
 		@tweets = Tweet.all
+		@gametweets = Gametweet.all
 	end
 
+	# TEAM
 	def new
 	end
 
@@ -14,4 +16,5 @@ class TweetsController < ApplicationController
 	def tweet_params
 		params.permit(:team_name,:univ_name,:eteam_text,:team_logo,:team_garrely)
 	end
+
 end

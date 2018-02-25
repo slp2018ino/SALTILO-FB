@@ -1,5 +1,12 @@
-<div class="contents row" >
+<div>
 <% @tweets.each do |tweet| %>
 <p><%= tweet.team_name %></p>
+<% end %>
+</div>
+
+
+<div>
+<% @gametweets.each do |gametweet| %>
+<p><%= gametweet.game_name %></p>
 <% end %>
 </div>

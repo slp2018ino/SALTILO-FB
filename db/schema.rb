@@ -11,7 +11,29 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20180225032638) do
+ActiveRecord::Schema.define(version: 20180225052429) do
+
+  create_table "games", force: :cascade do |t|
+    t.string   "game_name",        limit: 255
+    t.string   "game_place",       limit: 255
+    t.string   "game_team1",       limit: 255
+    t.string   "game_team2",       limit: 255
+    t.string   "game_team1_score", limit: 255
+    t.string   "game_team2_score", limit: 255
+    t.datetime "created_at"
+    t.datetime "updated_at"
+  end
+
+  create_table "gametweets", force: :cascade do |t|
+    t.string   "game_name",        limit: 255
+    t.string   "game_place",       limit: 255
+    t.string   "game_team1",       limit: 255
+    t.string   "game_team2",       limit: 255
+    t.string   "game_team1_score", limit: 255
+    t.string   "game_team2_score", limit: 255
+    t.datetime "created_at"
+    t.datetime "updated_at"
+  end
 
   create_table "tweets", force: :cascade do |t|
     t.string   "team_name",    limit: 255
