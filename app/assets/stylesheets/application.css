@@ -1,15 +1,119 @@
-/*
- * This is a manifest file that'll be compiled into application.css, which will include all the files
- * listed below.
- *
- * Any CSS and SCSS file within this directory, lib/assets/stylesheets, vendor/assets/stylesheets,
- * or any plugin's vendor/assets/stylesheets directory can be referenced here using a relative path.
- *
- * You're free to add application-wide styles to this file and they'll appear at the bottom of the
- * compiled file so the styles you add here take precedence over styles defined in any styles
- * defined in the other CSS/SCSS files in this directory. It is generally better to create a new
- * file per style scope.
- *
- *= require_tree .
- *= require_self
- */
+.body-wrp {
+	padding: 0 20px;
+}
+.header-menu a {
+	display: block;
+	font-size: 30px;
+	margin: 20px 0;	
+}
+.header p,.header .header-left a,.footer p,.header-menu a {
+	color: white;
+}
+.header,.footer {
+	background-color: black;
+	padding: 10px 0;
+}
+.header {
+	margin-bottom: 30px;
+}
+.footer {
+	margin-top: 30px;
+}
+
+
+/*summarybox*/
+.disgri {
+	display: grid;
+	grid-template-columns: 50% 50%;
+	grid-template-rows: auto;
+}
+.alicen {
+	text-align: center;
+}
+.linehei {
+	line-height: 1.5
+}
+
+
+/*リセットCSS*/
+html, body, div, span, applet, object, iframe,
+blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+h1 {
+	font-size: 80px;
+	margin: 0;
+	padding: 0;
+}
+h2 {
+	font-size: 70px;
+	margin: 0;
+	padding: 0;
+}
+h3 {
+	font-size: 60px;
+	margin: 0;
+	padding: 0;
+}
+h4 {
+	font-size: 50px;
+	margin: 0;
+	padding: 0;
+}
+h5 {
+	font-size: 40px;
+	margin: 0;
+	padding: 0;
+}
+h6 {
+	font-size: 30px;
+	margin: 0;
+	padding: 0;
+}
+p {
+	font-size: 30px;
+	margin: 0;
+	padding: 0;
+}
+a {
+	text-decoration: none;
+}
